@@ -68,7 +68,7 @@ void setup() {
   size(1550, 1080);  
   frameRate(30);
   
-  img = loadImage("help.jpg");
+  //img = loadImage("help.jpg");
   
   // x-y coordinates of nodes
   XYpos = new ReadFile("XYcoordinates.txt", 2);  
