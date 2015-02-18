@@ -34,8 +34,7 @@ class ReadFile {
 public int indexMin = 0, indexMax = 0;
 
 int getMax(int[] value, int num) {
-  //int m = -Number.MAX_VALUE;
-  int m = -Integer.MAX_VALUE;
+  int m = -Number.MAX_VALUE;
   for (int i=0; i<num-1; i++) {
     if (value[i] > m) {
       m = value[i];
@@ -46,8 +45,7 @@ int getMax(int[] value, int num) {
 }
 
 int getMin(int[] value, int num) {
-  //int m = Number.MAX_VALUE;
-  int m = Integer.MAX_VALUE;
+  int m = Number.MAX_VALUE;
   for (int i=0; i<num-1; i++) {
     if (value[i] < m) {
       m = value[i];
