@@ -74,7 +74,7 @@ void setup() {
   XYpos = new ReadFile("XYcoordinates.txt", 2);  
   XYpos.load();
   node_num = XYpos.rows;
-   
+  println("node_num: " + node_num); 
   // icolor & gcolor of active nodes
   colorFile = new ReadFile("Communities_Top20_i-gColor-c111.txt", 4);
   colorFile.load();
