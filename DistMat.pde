@@ -78,7 +78,7 @@ void setup() {
   // icolor & gcolor of active nodes
   colorFile = new ReadFile("Communities_Top20_i-gColor-c111.txt", 4);
   colorFile.load();
-  
+  println("colorFile: " + colorFile.rows);
   int[] group_color = new int[colorFile.rows];
   for (int i=0; i<colorFile.rows; i++) {
     group_color[i] = colorFile.value[i][3];
