@@ -74,11 +74,11 @@ void setup() {
   XYpos = new ReadFile("XYcoordinates.txt", 2);  
   XYpos.load();
   node_num = XYpos.rows;
-  println("node_num: " + node_num); 
+  //println("node_num: " + node_num); 
   // icolor & gcolor of active nodes
   colorFile = new ReadFile("Communities_Top20_i-gColor-c111.txt", 4);
   colorFile.load();
-  println("colorFile: " + colorFile.rows);
+  //println("colorFile: " + colorFile.rows);
   /*int[] group_color = new int[colorFile.rows];
   for (int i=0; i<colorFile.rows; i++) {
     group_color[i] = colorFile.value[i][3];
@@ -86,6 +86,7 @@ void setup() {
   group_num = getMax(group_color, colorFile.rows);
   println("group_num: " + group_num);
   */
+  group_num = 13;
   // distance matrices of entire time steps
   dmFile = new ReadFile[time_step];
   maxtrixSize = new int[time_step];
@@ -94,7 +95,7 @@ void setup() {
     dmFile[i].setCols();
     dmFile[i].load();
     maxtrixSize[i] = dmFile[i].cols;
-    println("dmFile cols : " + dmFile[i].cols);
+    //println("dmFile cols : " + dmFile[i].cols);
   }
   
   /***********************************************************************/
