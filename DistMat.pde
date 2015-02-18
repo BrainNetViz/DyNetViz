@@ -84,7 +84,7 @@ void setup() {
     group_color[i] = colorFile.value[i][3];
   }
   group_num = getMax(group_color, colorFile.rows);
-  //println("group_num: " + group_num);
+  println("group_num: " + group_num);
   
   // distance matrices of entire time steps
   dmFile = new ReadFile[time_step];
